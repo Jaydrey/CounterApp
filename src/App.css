@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&display=swap');
+*{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+  background-color: rgb(0, 43, 54);
+  width: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-bar{
+  min-height: 3.5rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 90%;
+  margin: 0 auto;
 }
-
-.App-link {
-  color: #61dafb;
+.nav-bar>h1{
+  color: rgba(250, 250, 250, 1);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main{
+  width: 100%;
+  min-height: 90vh;
+  background-color: rgba(0, 43, 54, .8);
+}
+.main-counter{
+  padding-top: 10%;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex: 1 1 100%;
+  align-items: center;
+}
+.counter{
+  width: 50%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.counter>h3{
+  /* min-width: 50%; */
+  color: rgb(0, 33, 41);
+  /* text-align: center; */
+}
+.counter h3>span{
+  color: rgba(250, 250, 250, 1);
+}
+#counter-add-num{
+  width: 90%;
+  background-color: inherit;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid rgb(1, 44, 54);
+  text-align: center;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+  font-size: 1.1rem;
+  display: block;
+  color: rgba(250, 250, 250, 1);
+}
+.counter-adds{
+  width: 50%;
+}
+.counter-adds>form{
+  width: 100%;
+}
+#counter-add-num:focus, 
+button:focus{
+  outline: none;
+  box-shadow: none;
 }
