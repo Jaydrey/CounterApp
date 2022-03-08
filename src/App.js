@@ -32,8 +32,10 @@ function App() {
             <div className='main-counter'>
               <div className='counter'>
                 <h3>counter: <span>{counter}</span></h3>
-                <button onClick={Increment}>Increase</button>
-                <button onClick={Decrement}>Decrease</button>
+                <div className="counter-buttons">
+                  <button onClick={Increment}>Increase</button>
+                  <button onClick={Decrement}>Decrease</button>
+                </div>
               </div>
               <div className='counter-adds'>
                 <form onSubmit={handleSubmitValue}>
